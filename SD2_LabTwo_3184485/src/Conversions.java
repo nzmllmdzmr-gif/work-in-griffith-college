@@ -19,7 +19,15 @@ public class Conversions {
         return String.valueOf(val);
     }
 
-    public String switchCase() {
-        return ""; // Stubs
+    public String switchCase(String val) {
+        char[] chars = val.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            if (Character.isUpperCase(chars[i])) {
+                chars[i] = Character.toLowerCase(chars[i]);
+            } else if (Character.isLowerCase(chars[i])) {
+                chars[i] = Character.toUpperCase(chars[i]);
+            }
+        }
+        return new String(chars);
     }
 }
