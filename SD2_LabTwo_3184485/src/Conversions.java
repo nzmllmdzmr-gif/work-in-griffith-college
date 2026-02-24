@@ -12,8 +12,8 @@ public class Conversions {
         return dollar / 1.08;
     }
 
-    public int stringToInteger (String val) {
-        return 0; // Stubs
+    public int stringToInteger(String val) {
+        return Integer.parseInt(val);
     }
 
     public String integerToString (int val) {
