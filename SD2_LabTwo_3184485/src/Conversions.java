@@ -5,7 +5,7 @@
 public class Conversions {
 
     public double euroToDollar(double euro) {
-        return 0.0; // Stubs
+        return euro * 1.08;// Stubs
     }
 
     public double dollarToEuro(double dollar) {
