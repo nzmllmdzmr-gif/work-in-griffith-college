@@ -15,7 +15,6 @@ public class Conversions {
     public int stringToInteger(String val) {
         return Integer.parseInt(val);
     }
-
     public String integerToString (int val) {
         return ""; // Stubs
     }
