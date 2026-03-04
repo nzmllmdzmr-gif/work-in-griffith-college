@@ -28,5 +28,14 @@ public class ShapeTest {
         assertEquals(24, r.area(), epsilon);
         assertEquals(20, r.perimeter(), epsilon);
         assertTrue(r.toString().contains("Rhombus"));
+
+    }
+    @Test
+    public void testTriangle() {
+        RightAngledTriangle t = new RightAngledTriangle("Triangle", 3, 4, 5);
+
+        assertEquals(6, t.area(), epsilon);
+        assertEquals(12, t.perimeter(), epsilon);
+        assertTrue(t.toString().contains("Triangle"));
     }
 }
