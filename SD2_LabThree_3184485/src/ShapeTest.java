@@ -10,6 +10,7 @@ public class ShapeTest {
 
     private double epsilon = 0.1;
 
+    //add Circle unit test
     @Test
     public void testCircle() {
         Circle c = new Circle("Circle", 3);
@@ -17,5 +18,14 @@ public class ShapeTest {
         assertEquals(28.27, c.area(), epsilon);
         assertEquals(18.84, c.perimeter(), epsilon);
         assertTrue(c.toString().contains("Circle"));
+    }
+    //add Rhombus unit test
+    @Test
+    public void testRhombus() {
+        Rhombus r = new Rhombus("Rhombus", 6, 8, 5);
+
+        assertEquals(24, r.area(), epsilon);
+        assertEquals(20, r.perimeter(), epsilon);
+        assertTrue(r.toString().contains("Rhombus"));
     }
 }
