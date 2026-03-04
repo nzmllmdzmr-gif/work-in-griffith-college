@@ -20,6 +20,7 @@ public class ShapeTest {
         assertTrue(c.toString().contains("Circle"));
     }
     //add Rhombus unit test
+
     @Test
     public void testRhombus() {
         Rhombus r = new Rhombus("Rhombus", 6, 8, 5);
